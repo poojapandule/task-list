@@ -1,50 +1,44 @@
 # Task Management Application
 
-This is a simple task management application built with Laravel for educational purposes.
+This is a simple task management application built with Laravel.
 
 ## Prerequisites
 
-- PHP 8.3 or higher
+- PHP 8.2 or higher
 - Composer
 - SQLite (default database)
 - Node.js and npm (for frontend assets)
 
 ## Setup
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/task-management.git
-   cd task-management
-   ```
-
-2. Install PHP dependencies:
+1. Install PHP dependencies:
    ```
    composer install
    ```
 
-3. Copy the `.env.example` file to `.env`:
+2. Copy the `.env.example` file to `.env`:
    ```
    cp .env.example .env
    ```
    The default configuration uses SQLite, so no additional database setup is required.
 
-4. Generate application key:
+3. Generate application key:
    ```
    php artisan key:generate
    ```
 
-5. Run database migrations and seed the database:
+4. Run database migrations and seed the database:
    ```
    php artisan migrate --seed
    ```
 
-6. Install and compile frontend assets:
+5. Install and compile frontend assets:
    ```
    npm install
    npm run dev
    ```
 
-7. Start the development server:
+6. Start the development server:
    ```
    php artisan serve
    ```
